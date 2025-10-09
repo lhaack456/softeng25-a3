@@ -1,6 +1,6 @@
 # softeng23-a3
 
-## Setting up the cloned project.
+## Setting Up the Cloned Project
 
 After cloning this repository, set up the development environment and run tests using the following.
 
