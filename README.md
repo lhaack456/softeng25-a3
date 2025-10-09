@@ -24,5 +24,6 @@ make test
 ![UML Diagram](doc/uml.png)
 
 1. In our UML diagram, should Task be a class or should it simply be a string?  Why or why not?
-   We think it should be a class because adding and removing things will be easier that way. Plus it will be easier to copy if there is multiple variables to that task.
+<br />   We think it should be a class because adding and removing things will be easier that way. Plus it will be easier to copy if there is multiple variables to that task.
 2. What future enhancements might you add to this project next?  Does the answer to this question change your answer to the first question?
+   <br /> Some future enhancements could potentially be, users being assigned to certain tasks or whether or not the task is completed or not. This would not change our answer to the first question, as this could simply be new variables added to the class itself.
