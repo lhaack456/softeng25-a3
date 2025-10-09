@@ -1,5 +1,25 @@
 # softeng23-a3
 
+## Setting up the cloned project.
+
+After cloning this repository, set up the development environment and run tests using the following.
+
+```console
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt 
+make build
+make test
+```
+
+You will never need to repeat all the above commands.  If you come back in a different shell, you will need to only do these:
+
+```console
+source env/bin/activate
+make test
+```
+
+## The Actual Assignment
 
 ![UML Diagram](doc/uml.png)
 
