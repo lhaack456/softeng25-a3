@@ -12,3 +12,13 @@ def test_add(testproj):
     testproj.add_task('dosomething')
     assert 'dosomething' in testproj.get_tasks()
 
+def test_del_task(testproj):
+    testproj.add_task('task1')
+    testproj.remove_task('task1')
+    assert 'task1' not in testproj.get_tasks()
+
+def test_several_tasks(testproj):
+    tasks = ['task1','task2','task3']
+    for t in tasks:
+        testproj.add_task(t)
+    assert (testproj.get_tasks()) == (tasks)
