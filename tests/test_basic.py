@@ -1,6 +1,7 @@
 import pytest
 
 from pmgr.project import Project
+from pmgr.project import TaskException
 
 @pytest.fixture(scope="function")
 def testproj():
@@ -22,3 +23,10 @@ def test_several_tasks(testproj):
     for t in tasks:
         testproj.add_task(t)
     assert (testproj.get_tasks()) == (tasks)
+
+def test_fail_remove_task(testproj):
+    tasks = []
+    with pytest.raises(TaskException):
+        testproj.remove_task('task1')
+    
+
