@@ -29,4 +29,11 @@ def test_fail_remove_task(testproj):
     with pytest.raises(TaskException):
         testproj.remove_task('task1')
     
-
+def test_add_exists_already(testproj):
+    testproj.add_task('somethinghere')
+    with pytest.raises(TaskException):
+        assert 'somethinghere' in testproj.get_tasksdef test_add_exists_already(testproj):
+    testproj.add_task('somethinghere')
+    with pytest.raises(TaskException) as x:
+        testproj.add_task('somethinghere')
+    assert 'already exists' in str(x.value)
